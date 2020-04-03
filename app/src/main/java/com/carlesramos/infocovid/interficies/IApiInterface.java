@@ -1,5 +1,7 @@
 package com.carlesramos.infocovid.interficies;
 
+import com.carlesramos.infocovid.model.CountryInfo;
+
 import retrofit2.Call;
 import retrofit2.http.GET;
 import retrofit2.http.Query;
@@ -11,12 +13,12 @@ import retrofit2.http.Query;
 public interface IApiInterface {
 
     /**
-     * LLama al metodo de comprobar si el nickName existe.
-     * @param nickName
-     * @return si existe o no.
+     * Obtiene la informacion de un pais por el nombre
+     * @param countryName
+     * @return Informació del pais en concret
      */
-    @GET("ApiJuegoDef/rest/inicio/nickName")
-    Call<String> nickNameExists(@Query("nickName") String nickName);
+    @GET("countries/countryName")
+    Call<CountryInfo> getCountryByName(@Query("countryName") String countryName);
 
     /**
      * Devuelve la jugada de la CPU

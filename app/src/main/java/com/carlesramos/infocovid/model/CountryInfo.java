@@ -1,20 +1,35 @@
 package com.carlesramos.infocovid.model;
 
-public class CountryInfo {
+import com.google.gson.annotations.SerializedName;
+
+import java.io.Serializable;
+
+public class CountryInfo implements Serializable {
+
+    @SerializedName("country")
     private String name;
+    @SerializedName("cases")
     private int cases;
+    @SerializedName("todayCases")
     private int todayCases;
+    @SerializedName("deaths")
     private int deaths;
+    @SerializedName("todayDeaths")
     private int todayDeaths;
+    @SerializedName("recovered")
     private int recovered;
+    @SerializedName("active")
     private int active;
+    @SerializedName("critical")
     private int critical;
-    private int casesPerMillion;
-    private int deathsPerMillion;
+    @SerializedName("casesPerOneMillion")
+    private int casesPerOneMillion;
+    @SerializedName("deathsPerOneMillion")
+    private int deathsPerOneMillion;
 
     public CountryInfo(String name, int cases, int todayCases, int deaths, int todayDeaths,
-                       int recovered, int active, int critical, int casesPerMillion,
-                       int deathsPerMillion) {
+                       int recovered, int active, int critical, int casesPerOneMillion,
+                       int deathsPerOneMillion) {
         this.name = name;
         this.cases = cases;
         this.todayCases = todayCases;
@@ -23,8 +38,8 @@ public class CountryInfo {
         this.recovered = recovered;
         this.active = active;
         this.critical = critical;
-        this.casesPerMillion = casesPerMillion;
-        this.deathsPerMillion = deathsPerMillion;
+        this.casesPerOneMillion = casesPerOneMillion;
+        this.deathsPerOneMillion = deathsPerOneMillion;
     }
 
     public String getName() {
@@ -59,11 +74,11 @@ public class CountryInfo {
         return critical;
     }
 
-    public int getCasesPerMillion() {
-        return casesPerMillion;
+    public int getCasesPerOneMillion() {
+        return casesPerOneMillion;
     }
 
-    public int getDeathsPerMillion() {
-        return deathsPerMillion;
+    public int getDeathsPerOneMillion() {
+        return deathsPerOneMillion;
     }
 }
