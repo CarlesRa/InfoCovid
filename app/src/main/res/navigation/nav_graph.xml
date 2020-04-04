@@ -12,7 +12,11 @@
         tools:layout="@layout/fragment_main" >
         <action
             android:id="@+id/action_mainFragment_to_countryListFragment"
-            app:destination="@id/countryListFragment" />
+            app:destination="@id/countryListFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/anim" />
     </fragment>
     <fragment
         android:id="@+id/countryListFragment"
@@ -21,7 +25,11 @@
         tools:layout="@layout/fragment_country_list" >
         <action
             android:id="@+id/action_countryListFragment_to_countryDetailFragment"
-            app:destination="@id/countryDetailFragment" />
+            app:destination="@id/countryDetailFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/anim"
+            app:popEnterAnim="@anim/nav_default_enter_anim"
+            app:popExitAnim="@anim/anim" />
     </fragment>
     <fragment
         android:id="@+id/countryDetailFragment"
