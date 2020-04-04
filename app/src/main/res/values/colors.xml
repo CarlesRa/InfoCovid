@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#6200EE</color>
-    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#56006B</color>
     <color name="colorAccent">#03DAC5</color>
+    <color name="muerte">#fa1924</color>
+    <color name="recuperados">#23f00c</color>
+    <color name="neutrales">#e3a507</color>
+    <color name="background">#000000</color>
+    <color name="background_text">#0009AD</color>
+    <color name="recycler_background">#9fafc7</color>
+    <color name="text_color">#ffffff</color>
 </resources>

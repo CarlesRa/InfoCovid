@@ -81,4 +81,20 @@ public class CountryInfo implements Serializable {
     public int getDeathsPerOneMillion() {
         return deathsPerOneMillion;
     }
+
+    @Override
+    public String toString() {
+        return "CountryInfo{" +
+                "name='" + name + '\'' +
+                ", cases=" + cases +
+                ", todayCases=" + todayCases +
+                ", deaths=" + deaths +
+                ", todayDeaths=" + todayDeaths +
+                ", recovered=" + recovered +
+                ", active=" + active +
+                ", critical=" + critical +
+                ", casesPerOneMillion=" + casesPerOneMillion +
+                ", deathsPerOneMillion=" + deathsPerOneMillion +
+                '}';
+    }
 }
