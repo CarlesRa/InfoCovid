@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/mainFragment"
         android:name="com.carlesramos.infocovid.fragments.MainFragment"
-        android:label="fragment_main"
+        android:label="@string/global_info"
         tools:layout="@layout/fragment_main" >
         <action
             android:id="@+id/action_mainFragment_to_countryListFragment"
@@ -21,7 +21,7 @@
     <fragment
         android:id="@+id/countryListFragment"
         android:name="com.carlesramos.infocovid.fragments.CountryListFragment"
-        android:label="fragment_country_list"
+        android:label="@string/info_country"
         tools:layout="@layout/fragment_country_list" >
         <action
             android:id="@+id/action_countryListFragment_to_countryDetailFragment"
@@ -34,7 +34,7 @@
     <fragment
         android:id="@+id/countryDetailFragment"
         android:name="com.carlesramos.infocovid.fragments.CountryDetailFragment"
-        android:label="fragment_country_detail"
+        android:label="@string/detail_country"
         tools:layout="@layout/fragment_country_detail" >
         <argument
             android:name="country"

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimary">#ffffff</color>
     <color name="colorPrimaryDark">#56006B</color>
-    <color name="colorAccent">#03DAC5</color>
+    <color name="colorAccent">#000000</color>
     <color name="muerte">#fa1924</color>
     <color name="recuperados">#23f00c</color>
     <color name="neutrales">#e3a507</color>
