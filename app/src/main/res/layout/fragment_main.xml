@@ -62,7 +62,7 @@
                 android:id="@+id/textView2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="100dp"
+                android:layout_marginTop="25dp"
                 android:text="@string/world_cases"
                 android:textColor="@android:color/white"
                 android:textSize="45sp"
@@ -116,8 +116,8 @@
 
             <Button
                 android:id="@+id/btByCountry"
-                android:layout_width="232dp"
-                android:layout_height="83dp"
+                android:layout_width="208dp"
+                android:layout_height="57dp"
                 android:layout_marginTop="30dp"
                 android:background="@drawable/ripple_effect"
                 android:padding="10dp"
