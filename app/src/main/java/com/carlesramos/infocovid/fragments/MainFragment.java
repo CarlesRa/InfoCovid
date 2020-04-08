@@ -7,6 +7,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.Menu;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
@@ -95,7 +96,13 @@ public class MainFragment extends Fragment {
 
     }
 
-   /* public void setToolbar(View view){
+   /* @Override
+    public void onPrepareOptionsMenu(@NonNull Menu menu) {
+        super.onPrepareOptionsMenu(menu);
+        //menu.findItem(R.id.menu_search).setVisible(false);
+    }*/
+
+    /* public void setToolbar(View view){
         setHasOptionsMenu(true);
         toolbar = view.findViewById(R.id.appbar);
         ((AppCompatActivity) this.getActivity()).setSupportActionBar(toolbar);

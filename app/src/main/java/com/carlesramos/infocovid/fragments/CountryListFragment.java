@@ -1,5 +1,6 @@
 package com.carlesramos.infocovid.fragments;
 
+import android.content.Intent;
 import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -90,11 +91,6 @@ public class CountryListFragment extends Fragment implements ICountrySelected {
     }
 
     @Override
-    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
-        super.onActivityCreated(savedInstanceState);
-    }
-
-    @Override
     public void onResume() {
         super.onResume();
         if (tvSearchText.getText().length() > 0) {
@@ -141,7 +137,7 @@ public class CountryListFragment extends Fragment implements ICountrySelected {
     }
 
     public void filterText(String text) {
-        System.out.println(text);
+
         ArrayList<CountryInfo> filteredNames = new ArrayList<>();
         for (CountryInfo ci: countries) {
             System.out.println(ci.getName());
@@ -162,15 +158,4 @@ public class CountryListFragment extends Fragment implements ICountrySelected {
         Navigation.findNavController(v).
                 navigate(R.id.action_countryListFragment_to_countryDetailFragment, bundle);
     }
-
-
-    /*public void setToolbar(View view){
-
-        toolbar = view.findViewById(R.id.appbar);
-        ((AppCompatActivity) this.getActivity()).setSupportActionBar(toolbar);
-        ((AppCompatActivity) this.getActivity()).getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        ((AppCompatActivity) this.getActivity()).getSupportActionBar().setHomeButtonEnabled(true);
-        toolbar.inflateMenu(R.menu.menuapp);
-    }*/
-
 }

@@ -7,8 +7,10 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
+import android.view.Menu;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.SearchView;
 import android.widget.TextView;
 
 import com.carlesramos.infocovid.R;
@@ -37,6 +39,7 @@ public class CountryDetailFragment extends Fragment {
     private TextView tvCasesPerMillion;
     private TextView tvDeathsPerMillion;
     private DecimalFormat formatter;
+
 
     public CountryDetailFragment() {
         // Required empty public constructor
@@ -67,6 +70,7 @@ public class CountryDetailFragment extends Fragment {
         }
 
     }
+
 
     private void initializeComponents(View view) {
 

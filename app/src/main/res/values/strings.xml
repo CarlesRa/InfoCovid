@@ -27,4 +27,6 @@
     <string name="detail_country">Country Info</string>
     <string name="global_info">World Info</string>
 
+    <string name="search_title">Search by Country</string>
+
 </resources>
